@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /*в ширину и в высоту не включается padding и border*/
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: Montserrat;
+    min-width: 1440px;
+}
+
+.container_body{
+    width: 1600px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+button {
+    font-family: Montserrat;
+    cursor: pointer;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a,
+a:visited {
+    color: white;
+}
+
+ul li {
+    list-style: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.page_header {
+    width: 100%;
+    max-width: 1440px;
+    padding: 47px 122px;
+    background: transparent;
+    position: absolute;
+    top: 0px;
+}
+
+.navigation {
+    display: flex;
+    /*по умолчанию row*/
+}
+
+.navigation_list {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    /*выравнивает по вертикали*/
+    margin-left: 190px;
+}
+
+.navigation_title_main {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.page_main {
+    max-width: 1600px;
+    width: 100%;
+    min-height: 1024px;
+    text-align: center;
+}
+
+.home_section {
+    background-image: url("./images2/4f03cb261de0cb6638e3199b86ee87ed.jfif");
+    display: flex;
+    flex-direction: row;
+    gap: 338px;
+    padding-left: 115px;
+    padding-top: 127px;
+    padding-right: 75px;
+    min-height: 1024px;
+}
+
+.home_text_container {
+    display: flex;
+    flex-direction: column;
+    gap: 175px;
+    justify-content: center;
+}
+
+.home_title {
+    font-family: 'Kenia', cursive;
+    font-size: 150px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.home_description {
+    font-family: Istok Web;
+    font-size: 20px;
+    font-weight: 400;
+    width: 290px;
+    text-align: left;
+}
+
+.home_img_container {
+    position: relative;
+    width: 500px;
+    height: 888.006px;
+}
+
+.home_img_container_phone {
+    position: absolute;
+    bottom: -1px;
+    right: 10px;
+    z-index: 1;
+}
+
+.home_img_container_kabel {
+    position: absolute;
+    bottom: -8px;
+    right: 111px;
+}
+
+.music_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 0px;
+    padding-left: 122px;
+    padding-top: 83px;
+    padding-bottom: 178, 5px;
+    background: linear-gradient(180deg, #000F 0%, #D53005 6.04%);
+    min-height: 1024px;
+    align-items: center;
+    position: relative;
+}
+
+.music_content_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.music_title {
+    font-family: 'Karla', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: left;
+    position: absolute;
+    top: 83px;
+}
+
+.music_button_1 {
+    margin-top: 10px;
+}
+
+.music_button_2 {
+    margin-top: 88px;
+}
+
+.music_button {
+    width: 382px;
+    height: 83px;
+    flex-shrink: 0;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    background: radial-gradient(2086.98% 134.85% at 1.57% 7.83%, #B13E18 0%, #F3501A 100%);
+    box-shadow: -4px -4px 30px 0px rgba(255, 255, 255, 0.10), 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
+    font-family: 'Karla', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+}
+
+.about_section {
+    min-height: 1024px;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #D53005 0%, #000 6.04%);
+}
+
+.about_title {
+    text-align: left;
+    font-size: 40px;
+    font-weight: 400;
+    position: absolute;
+    top: 83px;
+    left: 122px;
+}
+
+.about_description {
+    max-width: 969px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.store_section {
+    min-height: 1024px;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(180deg, #000F 0%, #D53005 6.04%);
+    padding-top: 83px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.store_img_container{
+    position: absolute;
+    right: 0px;
+}
+
+.store_title {
+    position: absolute;
+    top: 83px;
+    left: 122px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+}
+
+.store_content_container {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.store_button {
+    width: 240px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    box-shadow: -4px -4px 4px 0px rgba(255, 255, 255, 0.10), 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0px 48px;
+    margin-left: 122px;
+}
+
+.store_button_1{
+    margin-top: -100px;
+    background: rgba(2, 2, 2, 0.90);
+    color: white;
+}
+
+.store_button_2 {
+    margin-top: 48px;
+    background: #E3E3E3;
+}
+
+.store_version_title{
+    font-size: 19px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 90px;
+    padding: 0 auto;
+    text-align: right;
+}
+.store_description{
+    width: 400px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-left: 60px;
+}
+
+.store_link{
+    width: 400px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-left: 60px;  
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.store_link:visited{
+    color: #000;
+}
+
+.page_footer{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background: linear-gradient(180deg, #D53005 0%, #000 4.01%);
+}
+
+.footer_content{
+    padding-top: 120px;
+    padding-left: 452px;
+    padding-right: 62px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_info{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer_bottom_data{
+    padding-left: 106px;
+    padding-right: 122px;
+    padding-bottom: 74px;
+}
+
+.footer_logotype{
+    display: block;
+    font-family: 'Kenia', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 138px;
+    line-height: 1;
+}
+
+.footer_other{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
